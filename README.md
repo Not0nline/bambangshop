@@ -48,7 +48,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     (You might want to use `cargo check` if you only need to verify your work without running the app.)
 
 ## Mandatory Checklists (Publisher)
--   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
+-   [v] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
 -   **STAGE 1: Implement models and repositories**
     -   [v] Commit: `Create Subscriber model struct.`
     -   [v] Commit: `Create Notification model struct.`
@@ -58,12 +58,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [v] Commit: `Implement delete function in Subscriber repository.`
     -   [v] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [v] Commit: `Create Notification service struct skeleton.`
+    -   [v] Commit: `Implement subscribe function in Notification service.`
+    -   [v] Commit: `Implement subscribe function in Notification controller.`
+    -   [v] Commit: `Implement unsubscribe function in Notification service.`
+    -   [v] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [v] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -98,5 +98,23 @@ This is the place for you to write reflections:
 
 
 #### Reflection Publisher-2
+
+1. In the Model-View Controller (MVC) compound pattern, there is no “Service” and “Repository”. Model in MVC covers both data storage and business logic. Explain based on your understanding of design principles, why we need to separate “Service” and “Repository” from a Model? <br>
+<br>
+
+- The design principle of ‘Separation of Concerns’ suggests that different aspects of a software system should be segregated based on their focus areas. This allows for isolated changes when modifications are needed. The “Repository” is dedicated to data storage and retrieval, while the “Service” handles the business logic. This separation helps in isolating data access from business rules, making the system more maintainable.
+
+2. What happens if we only use the Model? Explain your imagination on how the interactions between each model (Program, Subscriber, Notification) affect the code complexity for each model? <br>
+<br>
+
+- If we were to use only the model to handle both data storage and business logic, it could lead to high coupling. This means each model would need to be aware of the others, and changes in one model could necessitate changes in another. Consequently, the code becomes more complex and harder to maintain.
+
+
+3. Have you explored more about Postman? Tell us how this tool helps you to test your current work. You might want to also list which features in Postman you are interested in or feel like it is helpful to help your Group Project or any of your future software engineering projects. <br>
+<br>
+
+- Postman is a tool used for testing APIs. One of the most useful features is the HTTP Request functionality, which allows you to customize the type of request (GET, POST, DELETE, etc.) and share a collection of requests simply by copying and pasting text. It’s particularly helpful for verifying that an application returns the expected response based on the requests made. Additionally, the ability to adjust methods like CRUD operations enables you to verify the accuracy of the data retrieved through Postman.
+
+
 
 #### Reflection Publisher-3
