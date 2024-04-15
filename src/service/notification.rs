@@ -41,7 +41,7 @@ impl NotificationService {
         ""),
         status: String::from(status)
     };
-        
+
         let subscribers: Vec<Subscriber> = SubscriberRepository::list_all(product_type);
         for subscriber in subscribers {
             payload.subscriber_name = subscriber.clone().name;
